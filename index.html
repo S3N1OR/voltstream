@@ -1,82 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt Stream</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
 </head>
 <body>
-		<!-- Начало: Данный блок удалять нельзя -->
-		<style>
-			.maketforfigma{
-				flex: 0 0 auto;
-				/*background: #303b44;*/
-				/*background: #5CDB95;*/
-				background: #313a46;
-				font-weight: bold;
-				display: flex;
-			}
-			.maketforfigma img{
-				border-radius: 10px;
-				margin: 4px 0 0 4px;
-			}
-			.maketforfigma p {
-				/*color: #fff;*/
-				/*color: #05386B;*/
-				color: #98a6ad;
-				text-decoration: none;
-				letter-spacing: .01875rem;
-				font-size: .775rem;
-				padding: 0 10px;
-				line-height: 0.70rem;
-			}
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a href="#" class="logo"><img src="./img/logo.png" alt=""></a>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">О нас</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Этапы</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Отзывы</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Наши работы</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Вопрос ответ</a></li>
+                    </ul>
+                </nav>
+                <div class="call">
+                    <a href="tel:+78005554480" class="call__telephone"><img class="telephone__icon" src="./img/telephone__icon.svg" alt="">+7 800 555 44 80</a>
+                    <div class="call__text">
+                        Заказать обратный звонок
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <img src="./img/hero__image.png" alt="" class="hero__image">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            <span>Рассчитаем стоимость</span> комплектующих и установки <span>системы заземления</span> за 1 день
+                        </h1>
+                        <p class="hero__text">
+                            Получите подробную смету ответив 
+                            всего на 5 простых вопросов
+                        </p>
+                        <button class="btn hero__btn">Получить расчет</button>
+                    </div>
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <img src="./img/hero__icon1.svg" alt="" class="hero__icon">
+                            <div class="hero__item-text">
+                                Собственное 
+                                производство
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <img src="./img/hero__icon2.svg" alt="" class="hero__icon">
+                            <div class="hero__item-text">
+                                Наличие товара
+                                на складе
+                            </div>
+                        </li>
+                        <li class="hero__item">
+                            <img src="./img/hero__icon3.svg" alt="" class="hero__icon">
+                            <div class="hero__item-text">
+                                Выдаем всю
+                                документацию
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-			.maketforfigma p > a {
-				/*color: #08ff00;*/
-				/*color: #EDF5E1;*/
-				color: #bbe4f0;
-				font-weight: bold;
-			}
-			.maketforfigma p > a:hover {
-				/*color: #ffa001*/
-				/*color: #379683*/
-				color: #ffffff
-			}
+        <section class="ground">
+            <div class="container">
+                <div class="ground__inner">
+                    <h1 class="section__title ground__title">
+                        Специализируемся
+                        на установке заземления 
+                        по направлениям
+                    </h1>
+                    <div class="ground__list">
+                        <div class="ground__item">
+                            <img src="./img/ground1.jpg" alt="" class="ground__image">
+                            <div class="ground__col">
+                                <h1 class="ground__title">Торговые центры</h1>
+                                <p class="ground__descr">Садовый центр Дарвин</p>
+                                <p class="ground__descr">OBI</p>
+                                <p class="ground__descr">Тц Вешняки</p>
+                                <p class="ground__descr">ТЦ Любимый Мичуринский проспект</p>
+                            </div>
+                        </div>
+                        <div class="ground__item">
+                            <img src="./img/ground2.jpg" alt="" class="ground__image">
+                            <div class="ground__col">
+                                <h1 class="ground__title">Частные дома</h1>
+                                <p class="ground__descr">Установили заземления и молние защиту для более 2000 домов</p>
+                            </div>
+                        </div>
+                        <div class="ground__item">
+                            <img src="./img/ground3.jpg" alt="" class="ground__image">
+                            <div class="ground__col">
+                                <h1 class="ground__title">Складские комплексы</h1>
+                                <p class="ground__descr">Установили заземление 
+                                    и молниезащиту для более
+                                    100 складских комплексов</p>
+                            </div>
+                        </div>
+                        <div class="ground__item">
+                            <img src="./img/ground4.jpg" alt="" class="ground__image">
+                            <div class="ground__col">
+                                <h1 class="ground__title">Производственные здания</h1>
+                                <p class="ground__descr">Завод Renault</p>
+                                <p class="ground__descr">Завод Майский Чай</p>
+                                <p class="ground__descr">Завод Хохланд Рус</p>
+                                <p class="ground__descr">Завод KERAMA MARAZZI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			.main{
-				flex: 1 0 auto;
-			}
+        <div class="calculate">
+            <img src="./img/calculate__image.png" alt="" class="calculate__image">
+        </div>
 
-			html{
-				height: 100%;
-			}
+        <section class="cycle">
+            <div class="container">
+                <div class="cycle__inner">
+                    <h1 class="section__title cycle__title">
+                        Выполняем весь цикл работ от расчета до оформления документации   
+                    </h1>
+                    <div class="cycle__list">
+                        <div class="cycle__item">
+                            <h1 class="cycle__item-title">Предварительный расчет
+                                материалов и стоимости работ
+                            </h1>
+                            <span class="cycle__item-number">01</span>
+                        </div>
+                        <div class="cycle__item">
+                            <h1 class="cycle__item-title">Бесплатный выезд <br>
+                                инжинера на замер
+                            </h1>
+                            <span class="cycle__item-number">02</span>
+                        </div>
+                        <div class="cycle__item">
+                            <h1 class="cycle__item-title">Заключение договора
+                            </h1>
+                            <span class="cycle__item-number">03</span>
+                        </div>
+                        <div class="cycle__item">
+                            <h1 class="cycle__item-title">Предоплата
+                            </h1>
+                            <span class="cycle__item-number">04</span>
+                        </div>
+                        <div class="cycle__item">
+                            <h1 class="cycle__item-title">Выполнение работ
+                            </h1>
+                            <span class="cycle__item-number">05</span>
+                        </div>
+                        <div class="cycle__item">
+                            <h1 class="cycle__item-title">Оплата и выдача 
+                                исполнительной документации
+                            </h1>
+                            <span class="cycle__item-number">06</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			body{
-				display: flex;
-				flex-direction: column;
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-		</style>
-		<div class="maketforfigma">
-			<a href="https://t.me/s/FigmaToHTML" target="_blank">
-				<img src="logo.png">
-			</a>
-			<div>
-				<p>
-					Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
-				</p>
-				<p>
-					При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
-					<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
-				</p>
-			</div>
-		</div>
-		<!-- Конец -->
+        <section class="slider__section">
+            <div class="container__right">
+                <div class="slider__inner">
+                    <h1 class="section__title slider__title">Отзывы о работе с нами</h1>
+                    <div class="slider-review">
+                        <img src="./img/slider1.jpg" alt="" class="slider__img">
+                        <img src="./img/slider2.jpg" alt="" class="slider__img">
+                        <img src="./img/slider3.jpg" alt="" class="slider__img">
+                        <img src="./img/slider4.jpg" alt="" class="slider__img">
+                        <img src="./img/slider5.jpg" alt="" class="slider__img">
+                    </div>
+                    <h1 class="section__title slider__title">Фото готовых работ</h1>
+                    <div class="slider-work">
+                        <img src="./img/slider6.png" alt="" class="slider__img">
+                        <img src="./img/slider7.png" alt="" class="slider__img">
+                        <img src="./img/slider8.png" alt="" class="slider__img">
+                        <img src="./img/slider9.png" alt="" class="slider__img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<div class="main">
-			В данном блоке размещается верстка
-		</div>
+        <section class="order">
+            <div class="container__right">
+                <!-- <img src="./img/order-image2.png" alt="" class="order__image2"> -->
+                <img src="./img/order-image.png" alt="" class="order__image">
+            </div>
+            <div class="container">
+                <div class="order__inner">
+                    <div class="order__col">
+                        <h1 class="order__title">
+                            Закажите <span>бесплатную консультацию</span>
+                            инженера и получите полный расчет
+                            стоимости комплектующих и установки
+                        </h1>
+                        <div class="form">
+                            <input placeholder="Ваше имя" type="text" class="order__input">
+                            <input placeholder="Ваш номер" type="tel" class="order__input">
+                            <button class="btn order__btn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider__section">
+            <div class="container__right">
+                <div class="slider__inner">
+                    <h1 class="section__title slider__title">Отзывы о работе с нами</h1>
+                    <div class="slider-accessory">
+                        <img src="./img/slider10.jpg" alt="" class="slider__img">
+                        <img src="./img/slider10.jpg" alt="" class="slider__img">
+                        <img src="./img/slider10.jpg" alt="" class="slider__img">
+                        <img src="./img/slider10.jpg" alt="" class="slider__img">
+                        <img src="./img/slider10.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faq__inner">
+                    <h1 class="section__title faq__title">Ответы на частые вопросы</h1>
+                    <div class="faq__list">
+                        <div class="faq__item" id="faq__item">
+                            <label class="faq__item-title">Сколько времени потребуется на расчет? <img src="./img/arrow.svg" alt="" class="arrow"></label>
+                            <p class="faq__text">
+                                Время от отправки заявки до готовой сметы 
+                                и проекта занимает в среднем 3-5 дней
+                            </p>
+                        </div>
+                        <div class="faq__item">
+                            <label class="faq__item-title">Длительность монтажа для частного дома? <img src="./img/arrow.svg" alt="" class="arrow"></label>
+                            <p class="faq__text">
+                                Время от отправки заявки до готовой сметы 
+                                и проекта занимает в среднем 3-5 дней
+                            </p>
+                        </div>
+                        <div class="faq__item">
+                            <label class="faq__item-title">Какая документация предоставляется после монтажа? <img src="./img/arrow.svg" alt="" class="arrow"></label>
+                            <p class="faq__text">
+                                Время от отправки заявки до готовой сметы 
+                                и проекта занимает в среднем 3-5 дней
+                            </p>
+                        </div>
+                        <div class="faq__item">
+                            <label class="faq__item-title">Какой материал используется в заземлении <img src="./img/arrow.svg" alt="" class="arrow"></label>
+                            <p class="faq__text">
+                                Время от отправки заявки до готовой сметы 
+                                и проекта занимает в среднем 3-5 дней
+                            </p>
+                        </div>
+                        <div class="faq__item">
+                            <label class="faq__item-title">Какие способы оплаты принимаете? <img src="./img/arrow.svg" alt="" class="arrow"></label>
+                            <p class="faq__text">
+                                Время от отправки заявки до готовой сметы 
+                                и проекта занимает в среднем 3-5 дней
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__inner">
+                <h1 class="footer__title">
+                    Свяжитесь с нами 
+                    или приезжайте в гости 
+                    на чашечку кофе!
+                </h1>
+                <div class="footer__contacts">
+                    <a href="tel:+78005554480" class="footer__number">+7 800 555 44 80</a>
+                    <a href="mailto: info@voltstream.ru" class="footer__email">Info@voltstream.ru</a>
+                </div>
+                <div class="footer__address">Россия, Москва, Ул. Газгольдерная 12 стр. 5</div>
+                <div class="footer__socials">
+                    <a href="#" class="instagram">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_108_6727)">
+                            <path d="M15.9998 2.6665C19.6225 2.6665 20.0745 2.67984 21.4958 2.7465C22.9158 2.81317 23.8825 3.03584 24.7332 3.3665C25.6132 3.70517 26.3545 4.16384 27.0958 4.90384C27.7738 5.57037 28.2984 6.37662 28.6332 7.2665C28.9625 8.11584 29.1865 9.08384 29.2532 10.5038C29.3158 11.9252 29.3332 12.3772 29.3332 15.9998C29.3332 19.6225 29.3198 20.0745 29.2532 21.4958C29.1865 22.9158 28.9625 23.8825 28.6332 24.7332C28.2994 25.6235 27.7747 26.43 27.0958 27.0958C26.4291 27.7736 25.6229 28.2982 24.7332 28.6332C23.8838 28.9625 22.9158 29.1865 21.4958 29.2532C20.0745 29.3158 19.6225 29.3332 15.9998 29.3332C12.3772 29.3332 11.9252 29.3198 10.5038 29.2532C9.08384 29.1865 8.11717 28.9625 7.2665 28.6332C6.37627 28.2991 5.56987 27.7744 4.90384 27.0958C4.22571 26.4294 3.70108 25.6231 3.3665 24.7332C3.03584 23.8838 2.81317 22.9158 2.7465 21.4958C2.68384 20.0745 2.6665 19.6225 2.6665 15.9998C2.6665 12.3772 2.67984 11.9252 2.7465 10.5038C2.81317 9.0825 3.03584 8.11717 3.3665 7.2665C3.70015 6.37608 4.22491 5.5696 4.90384 4.90384C5.57007 4.22548 6.37641 3.70081 7.2665 3.3665C8.11717 3.03584 9.0825 2.81317 10.5038 2.7465C11.9252 2.68384 12.3772 2.6665 15.9998 2.6665ZM15.9998 9.33317C14.2317 9.33317 12.536 10.0355 11.2858 11.2858C10.0355 12.536 9.33317 14.2317 9.33317 15.9998C9.33317 17.7679 10.0355 19.4636 11.2858 20.7139C12.536 21.9641 14.2317 22.6665 15.9998 22.6665C17.7679 22.6665 19.4636 21.9641 20.7139 20.7139C21.9641 19.4636 22.6665 17.7679 22.6665 15.9998C22.6665 14.2317 21.9641 12.536 20.7139 11.2858C19.4636 10.0355 17.7679 9.33317 15.9998 9.33317V9.33317ZM24.6665 8.99984C24.6665 8.55781 24.4909 8.13389 24.1784 7.82133C23.8658 7.50877 23.4419 7.33317 22.9998 7.33317C22.5578 7.33317 22.1339 7.50877 21.8213 7.82133C21.5088 8.13389 21.3332 8.55781 21.3332 8.99984C21.3332 9.44186 21.5088 9.86579 21.8213 10.1783C22.1339 10.4909 22.5578 10.6665 22.9998 10.6665C23.4419 10.6665 23.8658 10.4909 24.1784 10.1783C24.4909 9.86579 24.6665 9.44186 24.6665 8.99984ZM15.9998 11.9998C17.0607 11.9998 18.0781 12.4213 18.8283 13.1714C19.5784 13.9216 19.9998 14.939 19.9998 15.9998C19.9998 17.0607 19.5784 18.0781 18.8283 18.8283C18.0781 19.5784 17.0607 19.9998 15.9998 19.9998C14.939 19.9998 13.9216 19.5784 13.1714 18.8283C12.4213 18.0781 11.9998 17.0607 11.9998 15.9998C11.9998 14.939 12.4213 13.9216 13.1714 13.1714C13.9216 12.4213 14.939 11.9998 15.9998 11.9998V11.9998Z" fill="#F2323D"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_108_6727">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                            
+                    </a>
+                    <a href="#" class="twitter">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_108_6724)">
+                            <path d="M29.5494 7.54124C28.5315 7.99149 27.452 8.2872 26.3467 8.41857C27.5117 7.72181 28.3837 6.62525 28.8001 5.33324C27.7067 5.9839 26.5081 6.4399 25.2587 6.68657C24.4195 5.78867 23.3072 5.19319 22.0947 4.99268C20.8821 4.79218 19.6373 4.99789 18.5538 5.57784C17.4702 6.15779 16.6086 7.07948 16.1029 8.19963C15.5972 9.31977 15.4757 10.5756 15.7574 11.7719C13.5402 11.6608 11.3712 11.0846 9.39112 10.0808C7.41106 9.07698 5.66424 7.66797 4.26407 5.94524C3.76846 6.7965 3.50801 7.7642 3.5094 8.74924C3.5094 10.6826 4.4934 12.3906 5.9894 13.3906C5.10408 13.3627 4.23825 13.1236 3.46407 12.6932V12.7626C3.46434 14.0502 3.9099 15.2981 4.7252 16.2946C5.54051 17.2912 6.67538 17.9752 7.9374 18.2306C7.11556 18.4533 6.25381 18.4861 5.4174 18.3266C5.77323 19.4349 6.46675 20.4042 7.40086 21.0987C8.33497 21.7933 9.46291 22.1783 10.6267 22.1999C9.47004 23.1083 8.14564 23.7799 6.72924 24.1761C5.31285 24.5724 3.83224 24.6856 2.37207 24.5092C4.921 26.1485 7.8882 27.0187 10.9187 27.0159C21.1761 27.0159 26.7854 18.5186 26.7854 11.1492C26.7854 10.9092 26.7787 10.6666 26.7681 10.4292C27.8599 9.64013 28.8022 8.6626 29.5507 7.54257L29.5494 7.54124Z" fill="#F2323D"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_108_6724">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                            
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
